@@ -30,7 +30,7 @@ body,h1,h2,h3,h4,h5 {
 
 .overlay {
   position: fixed;
-  display: none;
+  /*display: none;*/
   width: 100%;
   height: 100%;
   top: 0;
@@ -50,4 +50,8 @@ body,h1,h2,h3,h4,h5 {
   color: white;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
+}
+
+.hide {
+  display: none;
 }

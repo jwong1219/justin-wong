@@ -23,11 +23,11 @@ $(function() {
     let overlay = `#overlay-${$(this).data("overlay")}`;
     console.log(overlay);
     console.log(`${overlay}`)
-    $(`${overlay}`).style.display="block";
+    $(`${overlay}`).removeClass("hide");
   },
     function() {
       let overlay = `#overlay-${$(this).data("overlay")}`;
       console.log(overlay);
-      $(`${overlay}`).style.display="none";
+      $(`${overlay}`).addClass("hide");
   })
 })
