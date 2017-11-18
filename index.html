@@ -3,10 +3,12 @@
 <title>Justin Wong</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="./assets/images/favicon.ico" type="image/ico" sizes="16x16">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" type="text/css" href="./assets/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
@@ -14,9 +16,9 @@
 <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
   <h3 class="w3-padding-64 w3-center"><b>Justin<br>Wong</b></h3>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> 
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
-  <a href="#connect" onclick="w3_close()" class="w3-bar-item w3-button">Connect</a>
+  <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button jumper">PORTFOLIO</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button jumper">ABOUT ME</a> 
+  <a href="#connect" onclick="w3_close()" class="w3-bar-item w3-button jumper">CONNECT</a>
 </nav>
 
 <!-- Top menu on small screens -->
@@ -35,17 +37,22 @@
   <div class="w3-hide-large" style="margin-top:83px"></div>
   
   <!-- P grid -->
-  <div class="w3-row">
+  <div class="w3-row" id="portfolio">
     <div class="w3-half">
-      <a target="_blank" href="https://jwong1219.github.io/Bored-Friday-Fun-Finder/"><img src="./assets/images/Friday-Fun-Finder.png" style="width:100%" onclick="onClick(this)" alt="Bored Friday Fun Finder"></a>
-      <a target="_blank" href="https://github.com/jwong1219/dr-node"><img src="./assets/images/Dr-Node.png" style="width:100%" onclick="onClick(this)" alt="Dr. Node"></a>
-      <a target="_blank" href="https://jwong1219.github.io/TriviaGame/"><img src="./assets/images/Parks-Rec-Trivia.png" style="width:100%" onclick="onClick(this)" alt="Parks and Rec"></a>
+      <div>
+        <div id="overlay-1" class="overlay">
+          <div class="text">Test Text</div>
+        </div>
+        <a class="project" target="_blank" href="https://jwong1219.github.io/Bored-Friday-Fun-Finder/" data-overlay="1"><img src="./assets/images/Friday-Fun-Finder.png" style="width:100%" alt="Bored Friday Fun Finder"></a>
+      </div>
+      <a class="project" target="_blank" href="https://github.com/jwong1219/dr-node"><img src="./assets/images/Dr-Node.png" style="width:100%" alt="Dr. Node"></a>
+      <a class="project" target="_blank" href="https://jwong1219.github.io/TriviaGame/"><img src="./assets/images/Parks-Rec-Trivia.png" style="width:100%" alt="Parks and Rec"></a>
     </div>
 
     <div class="w3-half">
-      <a target="_blank" href="https://glacial-hamlet-13362.herokuapp.com/"><img src="./assets/images/Burger-Byte.png" style="width:100%" onclick="onClick(this)" alt="Burger Byte"></a>
-      <a target="_blank" href="https://jwong1219.github.io/Hangman-Game/"><img src="./assets/images/Star-Wars-Hangman.png" style="width:100%" onclick="onClick(this)" alt="Star Wars Hangman"></a>
-      <a target="_blank" href="https://gentle-cliffs-96233.herokuapp.com/"><img src="./assets/images/Safe-Travels.png" style="width:100%" onclick="onClick(this)" alt="Safe Travels"></a>
+      <a class="project" target="_blank" href="https://glacial-hamlet-13362.herokuapp.com/"><img src="./assets/images/Burger-Byte.png" style="width:100%" alt="Burger Byte"></a>
+      <a class="project" target="_blank" href="https://jwong1219.github.io/Hangman-Game/"><img src="./assets/images/Star-Wars-Hangman.png" style="width:100%" alt="Star Wars Hangman"></a>
+      <a class="project" target="_blank" href="https://gentle-cliffs-96233.herokuapp.com/"><img src="./assets/images/Safe-Travels.png" style="width:100%" alt="Safe Travels"></a>
     </div>
     
   </div>
@@ -77,12 +84,14 @@
   <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="connect">
     <div class="w3-content" style="max-width:600px">
       <h4 class="w3-center"><b>Connect With Me</b></h4>
-      <a href="https://github.com/jwong1219" target="_blank">
-        <img class='connect_buttons' alt ='Github Icon' src="assets/images/if_github.png">
-      </a>
-      <a href="https://www.linkedin.com/in/justin-wong-36b868141/" target="_blank">
-        <img class='connect_buttons' alt ='LinkedIn Icon' src="assets/images/if_linkedin.png">
-      </a>
+      <div class= w3-center>
+        <a href="https://github.com/jwong1219" target="_blank">
+          <img class='connect_buttons' alt ='Github Icon' src="assets/images/if_github.png">
+        </a>
+        <a href="https://www.linkedin.com/in/justin-wong-36b868141/" target="_blank">
+          <img class='connect_buttons' alt ='LinkedIn Icon' src="assets/images/if_linkedin.png">
+        </a>
+      </div>
     </div>
   </div>
 
