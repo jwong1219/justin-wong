@@ -19,15 +19,15 @@ $(function() {
     }, 600);    
   });
 
-  $(".project").hover(function() {
-    let overlay = `#overlay-${$(this).data("overlay")}`;
-    console.log(overlay);
-    console.log(`${overlay}`)
-    $(`${overlay}`).removeClass("hide");
-  },
-    function() {
-      let overlay = `#overlay-${$(this).data("overlay")}`;
-      console.log(overlay);
-      $(`${overlay}`).addClass("hide");
-  })
+  // $(".project").hover(function() {
+  //   let overlay = `#overlay-${$(this).data("overlay")}`;
+  //   console.log(overlay);
+  //   console.log(`${overlay}`)
+  //   $(`${overlay}`).removeClass("hide");
+  // },
+  //   function() {
+  //     let overlay = `#overlay-${$(this).data("overlay")}`;
+  //     console.log(overlay);
+  //     $(`${overlay}`).addClass("hide");
+  // })
 })
